@@ -38,20 +38,15 @@ local
       % TODO
       {Project.readFile 'wave/animaux/cow.wav'}
    end
-
-   fun {Duration Time Partition}
-      local
-	 PartitionItem = {NewCell nil}
-      in
-	 
-	 case Partition of H|T then
-	    PartitionItem:=H
-	    @Note.1
-	    
-	    
-	  
-
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+    fun {Duration Time Partition}
+      local
+      fun {HowLong Partition}
+      A = {NewCell nil}
+      case Partition of H|T then
+      
+
 
    Music = {Project.load 'joy.dj.oz'}
    Start
